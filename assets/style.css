@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**reset para REMS - 62.5 = 10px**/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.general{
+    background-image: url(../images/fondo.jpg);
+    background-position: center center;
+    background-size: cover;
+}
+
+.header {
+    
+    height: 10vh;
+    min-height: 45rem;
+}
+.titulo {
+    font-size: 4rem;
+    color:white;
+    padding-left: 90rem; 
+}
+
+.contenido-header {
+    height: 10%;
+    padding-top: 5rem;
+    padding-left: 10rem;
+    flex-direction: column;
+
+}
+.logo {
+    max-width: 45%;
+    border-radius: 20rem;
+       
+}
+.datos{
+    font-style: oblique;
+    font-size: 3rem;
+    color: whitesmoke;
+}
+
+
