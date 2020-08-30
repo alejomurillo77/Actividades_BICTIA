@@ -1,0 +1,69 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+    /**reset para REMS - 62.5 = 10px**/
+}
+*, *:before, *:after{
+    box-sizing: inherit;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
+}
+.h1{
+    height: 30vh;
+    display: flex;
+    flex-direction: column-reverse;
+    color:yellow;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.header{
+    height: 30vh;
+    background-image: url(../Assets/images/math.jpg);
+    background-position: center center;
+    background-size: cover;      
+}
+.h2{
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-style: oblique;
+    font-weight: bold;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.form{
+    height: 30px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.botones{
+                width:100%;
+                display: flex;
+                justify-content: space-evenly;
+                font-weight: 700;
+                text-decoration: none;
+                font-size: 1.8rem;
+                padding: 1rem 7rem;
+                margin-top: 3rem;
+                text-align: center;
+}
+.b1{
+    background-color: black;
+    width: 6rem;
+    block-size: 6rem;
+    text-align: center;
+    font-size: 30px;
+    color:white;
+    border-radius: 20rem;    
+    align-items: flex-start;
+}
+.datos{
+    text-align: left;
+    margin-top: 7rem;
+    font-family: fantasy;
+    font-size: 4rem;
+}

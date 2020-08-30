@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Assets/style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="h1">CALCULADORA BASICA</h1>
+    </header>
+    <h2 class="h2">Ingresa 2 numeros:</h2>
+    <div class="form">
+        <input style="margin: 0 10px" type="number" id="num1">
+        <input type="number" id="num2">
+    </div>
+    <div class="botones">
+        <button class="b1" onclick ="operacion('+')">+</button>
+        <button class="b1" onclick ="operacion('-')">-</button>
+        <button class="b1" onclick ="operacion('*')">x</button>
+        <button class="b1" onclick ="operacion('/')">/</button>
+    </div>
+    <div class="datos" id="resultado">RESULTADO: </div>
+    <script src="./script/script.js"></script>
+</body>
+</html>
