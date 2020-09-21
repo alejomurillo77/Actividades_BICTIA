@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" 
+          integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" 
+          crossorigin="anonymous">
+</head>
+<body >
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+        <a class="navbar-brand" href="#">
+            <img src="Images/brujula.png" width="70" height="70" alt="" loading="lazy">
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-light" href="#">Inicio <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-light" href="#">Nosotros</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" 
+                 data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Servicios
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Cantante</a>
+                <a class="dropdown-item" href="#">Guitarrista</a>
+                <div class="dropdown-divider"></div>
+                <a class="dropdown-item" href="#">Pianista</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled text-light" href="#" tabindex="-1" aria-disabled="true">Musica</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link text-light" href="./Assets/lista.html">Lista de Artistas</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Buscar</button>
+          </form>
+        </div>
+      </nav>
+    
+    <form class="container mt-5" id="registroartistas">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="Nombre">Nombre Artista o Banda</label>
+            <input type="text" class="form-control" id="Nombre" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <label for="Integrantes">Numero de integrantes</label>
+            <input type="number" class="form-control" id="Integrantes" required>
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <label for="Ciudad">Ciudad Origen</label>
+            <input type="text" class="form-control" id="Ciudad" required>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="Genero">Genero Musical</label>
+            <select class="custom-select" id="Genero" required>
+              <option selected disabled value="">Elije...</option>
+              <option>Rock</option>
+              <option>Ragae</option>
+              <option>Pop</option>
+              <option>Indie</option>
+              <option>Country</option>
+              <option>Otro</option>
+            </select>
+          </div>
+          <div class="col-md-3 mb-3">
+            <label for="Cancion">Cancion Favorita</label>
+            <input type="text" class="form-control" id="Cancion" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <div class="form-check">
+            <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+            <label class="form-check-label" for="invalidCheck2">
+              Acepta Terminos y condiciones 
+            </label>
+          </div>
+        </div>
+        <button class="btn btn-primary" type="submit">Enviar Formulario</button>
+      </form>
+ 
+    <script src="./js/Artistas.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" 
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" 
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" 
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" 
+            crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" 
+            integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" 
+            crossorigin="anonymous"></script>
+    
+</body>
+</html>

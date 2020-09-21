@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+            integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        <title>Document</title>
+    </head>
+
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-light bg-primary">
+            <a class="navbar-brand" href="#">
+                <img src="../Images/brujula.png" width="70" height="70" alt="" loading="lazy">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>      
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                  <a class="nav-link text-light" href="#">Nosotros</a>
+                </li>
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" 
+                     data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Servicios
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="#">Cantante</a>
+                    <a class="dropdown-item" href="#">Guitarrista</a>
+                    <div class="dropdown-divider"></div>
+                    <a class="dropdown-item" href="#">Pianista</a>
+                  </div>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled text-light" href="#" tabindex="-1" aria-disabled="true">Musica</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-light" href="../index.html">Inicio</a>
+                </li>
+              </ul>
+            </div>
+          </nav>
+
+
+        <main class="container mt-5">
+            <h1 class="text-center my-5 ">Artistas favoritos</h1>
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <table class="table table-striped bg-primary text-light">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Indice</th>
+                                    <th scope="col">Nombre Artista</th>
+                                    <th scope="col">Numero de integrantes</th>
+                                    <th scope="col">Ciudad Origen</th>
+                                    <th scope="col">Genero Musical</th>
+                                    <th scope="col">Cancion Favorita</th>
+                                </tr>
+                            </thead>
+                            <tbody id="Artistas_favoritos">
+                               
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <button class="btn btn-primary" id="limpiar">Limpiar</button>
+            </div>
+
+        </main>
+
+        <script src="../js/script.js"></script>
+    </body>
+
+</html>
