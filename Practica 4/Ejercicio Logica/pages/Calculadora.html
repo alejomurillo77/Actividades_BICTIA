@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+        integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="StyleSheet" href="../Assets/styles.css">
+</head>
+
+<body>
+    <div class="container bg-dark text-light">
+        <h5 class="centrar">Calculadora</h5>
+        <header class="centrar mt-1 d-flex">
+            <img src="../Assets/images/menu.png" alt="menu" height="50" width="50">
+            <h3 class="ml-4 mt-1"> Estándar </h3>
+            <img class="ml-5 mt-1" src="../Assets/images/maximizar.png" alt="maximizar" height="30" width="30">
+        </header>
+        <div class="centrar">
+            <input type="text" class="borde bg-dark display-4 mt-2 col-7" placeholder="0" maxlength="20" id="inp">
+            <div class="col-7 d-flex justify-content-between mt-3">
+                <div class="display-5">MC</div>
+                <div class="display-5">MR</div>
+                <div class="display-5">M+</div>
+                <div class="display-5">M-</div>
+                <div class="display-5">MS</div>
+            </div>
+            <div class="col-7 d-flex mt-1">
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="porcentaje">%</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="CE">CE</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="C">C</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="borrar">
+                    <img src="../Assets/images/borrar.png" alt="borrar" height="30" width="30"></button>
+                </button>
+            </div>
+            <div class="col-7 d-flex mt-1">
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="frac">1/X</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="cuadrado">X<sup>2</sup></button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="raiz"><sup>2</sup>&#8730;X</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="division">&divide;</button>
+            </div>
+            <div class="col-7 d-flex mt-1">
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="siete">7</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="ocho">8</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="nueve">9</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="multiplicacion">&#215</button>
+            </div>
+            <div class="col-7 d-flex mt-1">
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="cuatro">4</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="cinco">5</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="seis">6</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="resta">-</button>
+            </div>
+            <div class="col-7 d-flex mt-1">
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="uno" >1</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="dos">2</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="tres">3</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="suma">+</button>
+            </div>
+            <div class="col-7 d-flex mt-1">
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="masmenos"><sup>+</sup>/<sub>-</sub></button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="cero">0</button>
+                <button type="button"
+                    class="caja text-light display-5 d-flex flex-row justify-content-center align-items-center" id="punto">.</button>
+                <button type="button"
+                    class="cajagris text-light display-5 d-flex flex-row justify-content-center align-items-center" id="igual">=</button>
+            </div>
+        </div>
+    </div>
+    <script src="../scripts/calculadora.js"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+            integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"
+             integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>
